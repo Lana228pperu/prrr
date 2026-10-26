@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URBAN THREAD — магазин одягу</title>
+
+  <!-- Підключення файлу зі стилями -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ШАПКА САЙТУ: логотип, меню (на телефоні — бургер ☰) -->
+  <header>
+    <a href="#home">URBAN<span>THREAD</span></a>
+
+    <!-- Прихована галочка: вона відкриває і закриває меню на телефоні -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" aria-label="Відкрити меню">☰</label>
+
+    <nav>
+      <a href="#home">Головна</a>
+      <a href="#collection">Колекція</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#prices">Клуб</a>
+      <a href="#about">Про нас</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ГОЛОВНИЙ ЕКРАН -->
+    <section id="home">
+      <p>Нова колекція 2026</p>
+      <h1>Одяг, у якому ти — <span>це ти</span></h1>
+      <p>Сучасний стрітвір з якісних тканин. Комфорт на кожен день і стиль, який помітять.</p>
+      <div>
+        <a href="#collection">Переглянути колекцію</a>
+        <a href="#prices">Стати учасником клубу</a>
+      </div>
+    </section>
+
+    <!-- КОЛЕКЦІЯ: чотири картки товарів -->
+    <section id="collection">
+      <h2>Популярні товари</h2>
+      <p>Наші бестселери цього сезону</p>
+
+      <div>
+        <article>
+          <figure aria-hidden="true">🧥<mark>Новинка</mark></figure>
+          <div>
+            <h3>Оверсайз худі</h3>
+            <p>М'який бавовняний фліс, вільний крій.</p>
+            <strong>1 890 грн</strong>
+            <a href="#contacts">Замовити</a>
+          </div>
+        </article>
+
+        <article>
+          <figure aria-hidden="true">👖</figure>
+          <div>
+            <h3>Джинси Straight</h3>
+            <p>Класичний прямий крій, щільний деним.</p>
+            <strong>1 650 грн</strong>
+            <a href="#contacts">Замовити</a>
+          </div>
+        </article>
+
+        <article>
+          <figure aria-hidden="true">👕</figure>
+          <div>
+            <h3>Базова футболка</h3>
+            <p>100% органічна бавовна, 6 кольорів.</p>
+            <strong>790 грн</strong>
+            <a href="#contacts">Замовити</a>
+          </div>
+        </article>
+
+        <article>
+          <figure aria-hidden="true">🧥<mark>Хіт</mark></figure>
+          <div>
+            <h3>Куртка бомбер</h3>
+            <p>Легка демісезонна куртка з утеплювачем.</p>
+            <strong>2 990 грн</strong>
+            <a href="#contacts">Замовити</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ПЕРЕВАГИ -->
+    <section id="benefits">
+      <h2>Чому обирають нас</h2>
+      <p>Ми дбаємо про кожну деталь</p>
+
+      <div>
+        <div>
+          <span>🚚</span>
+          <h3>Швидка доставка</h3>
+          <p>Відправка в день замовлення по всій Україні.</p>
+        </div>
+        <div>
+          <span>🔄</span>
+          <h3>Повернення 30 днів</h3>
+          <p>Не підійшов розмір? Обміняємо або повернемо кошти.</p>
+        </div>
+        <div>
+          <span>🌱</span>
+          <h3>Якісні матеріали</h3>
+          <p>Тканини, які приємні до тіла й довго служать.</p>
+        </div>
+        <div>
+          <span>💳</span>
+          <h3>Зручна оплата</h3>
+          <p>Картка, Apple Pay, Google Pay або при отриманні.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ГАЛЕРЕЯ: підпис з'являється при наведенні -->
+    <section id="gallery">
+      <h2>Галерея стилів</h2>
+      <p>Наведіть курсор на плитку, щоб побачити назву</p>
+
+      <div>
+        <figure>🧥<figcaption>Streetwear</figcaption></figure>
+        <figure>👖<figcaption>Денім</figcaption></figure>
+        <figure>👕<figcaption>Базовий гардероб</figcaption></figure>
+        <figure>🎒<figcaption>Аксесуари</figcaption></figure>
+        <figure>🧢<figcaption>Кепки й шапки</figcaption></figure>
+        <figure>👟<figcaption>Взуття</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ТАБЛИЦЯ РОЗМІРІВ -->
+    <section id="sizes">
+      <h2>Таблиця розмірів</h2>
+      <p>Підберіть свій розмір без помилок</p>
+
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Розмір</th>
+              <th>Груди, см</th>
+              <th>Талія, см</th>
+              <th>Зріст, см</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>XS</td><td>82–86</td><td>66–70</td><td>160–168</td></tr>
+            <tr><td>S</td><td>86–90</td><td>70–74</td><td>165–173</td></tr>
+            <tr><td>M</td><td>90–98</td><td>74–82</td><td>170–180</td></tr>
+            <tr><td>L</td><td>98–106</td><td>82–90</td><td>175–185</td></tr>
+            <tr><td>XL</td><td>106–114</td><td>90–98</td><td>180–190</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- БЛОК ЦІН: клубні картки -->
+    <section id="prices">
+      <h2>Клуб URBAN THREAD</h2>
+      <p>Обирайте картку та отримуйте знижки на всі покупки</p>
+
+      <div>
+        <div>
+          <h3>Старт</h3>
+          <strong>0 грн</strong>
+          <span>назавжди</span>
+          <ul>
+            <li>Знижка 5% на все</li>
+            <li>Новини про колекції</li>
+            <li>Подарунок на день народження</li>
+          </ul>
+          <a href="#contacts">Приєднатися</a>
+        </div>
+
+        <div>
+          <mark>Популярний</mark>
+          <h3>Стиль</h3>
+          <strong>299 грн</strong>
+          <span>на рік</span>
+          <ul>
+            <li>Знижка 10% на все</li>
+            <li>Безкоштовна доставка</li>
+            <li>Доступ до розпродажів раніше</li>
+          </ul>
+          <a href="#contacts">Приєднатися</a>
+        </div>
+
+        <div>
+          <h3>Преміум</h3>
+          <strong>599 грн</strong>
+          <span>на рік</span>
+          <ul>
+            <li>Знижка 15% на все</li>
+            <li>Безкоштовні обміни</li>
+            <li>Закриті презентації колекцій</li>
+          </ul>
+          <a href="#contacts">Приєднатися</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРО НАС -->
+    <section id="about">
+      <div>
+        <h2>Про нас</h2>
+        <p>URBAN THREAD народився у Львові у 2020 році як невеликий проєкт трьох друзів, які хотіли створювати одяг без зайвого пафосу.</p>
+        <p>Сьогодні ми шиємо стильні речі для тих, хто цінує комфорт, якість і індивідуальність.</p>
+        <a href="#contacts">Зв'язатися з нами</a>
+      </div>
+
+      <aside>
+        <p><strong>5000+</strong> <span>задоволених клієнтів</span></p>
+        <p><strong>120</strong> <span>моделей одягу</span></p>
+        <p><strong>4.9</strong> <span>середня оцінка</span></p>
+      </aside>
+    </section>
+
+    <!-- ВІДГУКИ -->
+    <section id="reviews">
+      <h2>Відгуки клієнтів</h2>
+      <p>Що кажуть ті, хто вже купував</p>
+
+      <div>
+        <blockquote>
+          <span>★★★★★</span>
+          <p>Худі просто неймовірне: м'яке, не сіло після прання. Замовлю ще.</p>
+          <cite>— Олена, Київ</cite>
+        </blockquote>
+        <blockquote>
+          <span>★★★★★</span>
+          <p>Приїхало за два дні, розмір ідеально за таблицею. Дякую!</p>
+          <cite>— Андрій, Львів</cite>
+        </blockquote>
+        <blockquote>
+          <span>★★★★☆</span>
+          <p>Джинси якісні, сидять чудово. Хотілося б більше кольорів.</p>
+          <cite>— Марія, Одеса</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- КОНТАКТИ І ФОРМА -->
+    <section id="contacts">
+      <h2>Контакти</h2>
